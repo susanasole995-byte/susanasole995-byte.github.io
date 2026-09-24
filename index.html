@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CAMBIA: tu nombre -->
+  <title>Tu Nombre · Desarrollo web</title>
+  <meta name="description" content="Portfolio de Tu Nombre, desarrollador/a web junior.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== CABECERA / MENÚ ===== -->
+  <header class="header">
+    <nav class="nav contenedor">
+      <a href="#inicio" class="logo">TN</a> <!-- CAMBIA: tus iniciales -->
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== INICIO ===== -->
+    <section id="inicio" class="hero contenedor">
+      <div class="avatar" aria-hidden="true">TN</div> <!-- CAMBIA: iniciales, o pon <img src="foto.jpg" alt="Tu Nombre" class="avatar"> -->
+      <p class="hero-saludo">Hola, soy</p>
+      <h1>Tu Nombre</h1> <!-- CAMBIA -->
+      <p class="hero-rol">Desarrollador/a web junior</p>
+      <p class="hero-texto">
+        Vengo del sector sanitario y ahora creo webs sencillas, accesibles y pensadas para quien las usa.
+      </p>
+      <div class="hero-botones">
+        <a href="#proyectos" class="btn btn-principal">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-secundario">Contactar</a>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="sobre-mi" class="seccion contenedor">
+      <h2>Sobre mí</h2>
+      <!-- CAMBIA: cuenta tu historia con tus palabras (3-5 frases) -->
+      <p>
+        Durante X años trabajé en una clínica dental, donde aprendí a tratar con pacientes,
+        organizar agendas y entender cómo funciona un negocio de salud por dentro.
+      </p>
+      <p>
+        Decidí dar el salto a la programación y me he formado en HTML, CSS, JavaScript y SQL.
+        Me interesa especialmente crear webs útiles para pequeños negocios y el sector sanitario.
+      </p>
+    </section>
+
+    <!-- ===== TECNOLOGÍAS ===== -->
+    <section id="tecnologias" class="seccion contenedor">
+      <h2>Tecnologías</h2>
+      <ul class="tecnologias">
+        <li class="tec">
+          <span class="tec-nombre">HTML</span>
+          <span class="tec-desc">Estructura semántica y accesible</span>
+        </li>
+        <li class="tec">
+          <span class="tec-nombre">CSS</span>
+          <span class="tec-desc">Diseño responsive, Flexbox y Grid</span>
+        </li>
+        <li class="tec">
+          <span class="tec-nombre">JavaScript</span>
+          <span class="tec-desc">Interactividad y validación de formularios</span>
+        </li>
+        <li class="tec">
+          <span class="tec-nombre">SQL</span>
+          <span class="tec-desc">Consultas y diseño de bases de datos</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="seccion contenedor">
+      <h2>Proyectos</h2>
+      <div class="proyectos">
+
+        <article class="proyecto">
+          <h3>Portfolio personal</h3>
+          <p>Esta misma web. Diseño responsive hecho a mano, sin plantillas ni frameworks.</p>
+          <ul class="etiquetas">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="proyecto-enlaces">
+            <!-- CAMBIA: enlace a tu repositorio -->
+            <a href="https://github.com/tu-usuario/tu-usuario.github.io" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <h3>Clínica dental (ficticia)</h3>
+          <p>Landing page con servicios, equipo y formulario de cita con validación en JavaScript.</p>
+          <ul class="etiquetas">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="proyecto-enlaces">
+            <!-- CAMBIA cuando lo tengas hecho -->
+            <a href="#" target="_blank" rel="noopener">Ver web</a>
+            <a href="#" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <h3>Proyecto 3</h3> <!-- CAMBIA -->
+          <p>Descripción breve: qué hace y qué problema resuelve.</p>
+          <ul class="etiquetas">
+            <li>SQL</li><li>JavaScript</li>
+          </ul>
+          <div class="proyecto-enlaces">
+            <a href="#" target="_blank" rel="noopener">Ver web</a>
+            <a href="#" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="seccion contenedor contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes una oferta o un proyecto en mente? Escríbeme.</p>
+      <!-- CAMBIA: tu email, LinkedIn y GitHub -->
+      <a href="mailto:tu.email@ejemplo.com" class="btn btn-principal">tu.email@ejemplo.com</a>
+      <ul class="redes">
+        <li><a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="anio"></span> Tu Nombre</p> <!-- CAMBIA -->
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
